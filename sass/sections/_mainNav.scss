@@ -1,7 +1,6 @@
 .main-nav {
     transition: opacity 0.5s ease-in-out;
     position: absolute;
-    background-color: $primary-color;
     left:0;
     right: 0;
     min-height: 30px;
@@ -84,7 +83,7 @@
         border-radius: 5px;
         height: 4px;
         width: 45px;
-        background-color: $marigold-color;
+        background-color: $white;
         display: block;
         position: absolute;
         left: 0;
@@ -96,6 +95,7 @@
 
         &:nth-of-type(2), &:nth-of-type(3) {
             top: 12px;
+            left: -8px;
         }
 
         &:nth-of-type(4) {
@@ -116,13 +116,14 @@
         }
     }
 }
-// mobile navigation test
 
+// mobile navigation test
 .mobile-nav--open {
 
     .main-nav__links {
         display: block;
         opacity: 1;
+        background-color: transparentize($primary-color, 0.1);
 
     }
     .hamburger-menu span { 
@@ -139,4 +140,30 @@
 }
 .main-nav__link {
     display: block;
+}
+
+// nav logo
+.logo {
+    font-size: 40px;
+    color: $white;
+    padding-left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+
+    a {
+        text-decoration: none;
+        letter-spacing: -10px;
+        font-weight: bold;
+    }
+    @media screen and (max-width: $tablet-max) {
+        top: 0;
+        transform: none;
+
+        a {
+            padding: 10px;
+            display: block;
+        }
+    }    
 }
