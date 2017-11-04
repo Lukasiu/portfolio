@@ -151,6 +151,9 @@
     top: 50%;
     transform: translateY(-50%);
     left: 10px;
+    font-family: $first-font;
+    font-weight: 600;
+    z-index: 2;
 
     a {
         text-decoration: none;
@@ -158,11 +161,11 @@
         font-weight: bold;
     }
     @media screen and (max-width: $tablet-max) {
-        top: 0;
+        top: 5px;
         transform: none;
+        left: 5px;
 
         a {
-            padding: 10px;
             display: block;
         }
     }    

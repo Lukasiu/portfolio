@@ -90,7 +90,8 @@ a {
 .hero-content {
   position: absolute;
   bottom: 7%;
-  left: 2%; }
+  left: 2%;
+  font-family: "Montserrat", sans-serif; }
   .hero-content h1 {
     font-size: 2rem;
     color: #fff;
@@ -99,7 +100,8 @@ a {
     margin-bottom: 20px;
     text-transform: uppercase; }
     .hero-content h1 .name {
-      display: block; }
+      display: block;
+      font-weight: 600; }
     @media screen and (min-width: 1024px) {
       .hero-content h1 {
         font-size: 4rem; } }
@@ -227,18 +229,21 @@ a {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 10px; }
+  left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  z-index: 2; }
   .logo a {
     text-decoration: none;
     letter-spacing: -10px;
     font-weight: bold; }
   @media screen and (max-width: 1023px) {
     .logo {
-      top: 0;
+      top: 5px;
       -webkit-transform: none;
-              transform: none; }
+              transform: none;
+      left: 5px; }
       .logo a {
-        padding: 10px;
         display: block; } }
 
 .about-title {
