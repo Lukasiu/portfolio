@@ -1,51 +1,44 @@
 .about-title {
-    text-align: center;
     font-size: 24px;
+    float: left;
 }
 .page-section-about {
   color: #000;
   text-align: left;
 
-
     .about-text {
-    @media screen and (min-width: $desktop-min) {
-      float: right;
       padding-left: 50px;
       padding-right: 20px;
-      width: 49%;
+      width: 100%;
     }
       .about-title {
           font-size: 3rem;
-          color: $marigold-color;
           letter-spacing: 1.2px; 
           padding: 20px 20px;
       }
       .about-description {
-          line-height: 1.8;
-          padding: 20px 20px;
-          font-size: 1.4rem;
-          font-weight: 400;
+          font-size: 18px;
+          font-weight: 300;
+          letter-spacing: 1px;
+          line-height: 30px;
+          text-align: center;
           color: $paragraph-color; 
-          text-align: center;  
+         // text-align: center;  
+
+          @media screen and (min-width: $desktop-min) {
+              font-size: 24px;
+              letter-spacing: 1.2px;
+              line-height: 36px;
+              padding: 20px 20px;      
+          }
       }
       a {
           text-decoration: none;
           float: right;
-          margin-top: -20px;
+          margin-top: 20px;
           margin-right: 20px;
       }        
   }
-  .about-img {
-    @media screen and (min-width: $desktop-min) {
-        float: left;
-        width: 49%;
-    }
-    img {
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-  } 
   .content-container {
     &:after {
         content:"";
@@ -53,6 +46,6 @@
         clear: both;
     }
   }    
-}
+
 
 

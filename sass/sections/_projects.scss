@@ -20,8 +20,8 @@
     }
 
     @media screen and (min-width: 650px) { 
-        flex-basis: 42%;
-        height: 20vw;
+        flex-basis: 30%;
+        height: 18vw;
         max-height: 400px;
     }
 }
@@ -39,6 +39,7 @@
     top: 0;
     width: 100%;
     height: 100%;
+    font-size: $first-font;
     opacity: 0;
     transition: opacity 0.5s ease-out;
 }
@@ -60,9 +61,10 @@
 }
 .project-title {
     text-transform: uppercase;
+    font-weight: bold;
     margin-bottom: 10px;
     font-size: 24px;
-    color: $marigold-color;
+    color: $white;
 }
 .project-description {
     margin-bottom: 10px;

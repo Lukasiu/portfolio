@@ -44,10 +44,14 @@ body {
 
 .section-title {
   text-align: center;
-  font-size: 26px;
+  font-size: 50px;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Yantramanav", sans-serif;
+  text-transform: uppercase; }
+  @media screen and (min-width: 1024px) {
+    .section-title {
+      font-size: 99.2px; } }
 
 .section-subtitle {
   color: rgba(103, 103, 103, 0.8); }
@@ -78,10 +82,6 @@ a {
 .hero {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/img4.jpg) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/img4.jpg) no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-attachment: fixed;
   background-size: cover;
   background-position: center top;
   width: 100%;
@@ -91,7 +91,7 @@ a {
   position: absolute;
   bottom: 7%;
   left: 2%;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Yantramanav", sans-serif; }
   .hero-content h1 {
     font-size: 2rem;
     color: #fff;
@@ -115,7 +115,8 @@ a {
   left: 0;
   right: 0;
   min-height: 30px;
-  padding: 5px; }
+  padding: 5px;
+  font-family: "Yantramanav", sans-serif; }
   .main-nav .main-nav__links {
     display: none;
     opacity: 0;
@@ -141,7 +142,7 @@ a {
       color: #fff;
       text-decoration: none; }
       .main-nav .main-nav__links li a:hover {
-        color: #F9BA22; }
+        color: #fff; }
   @media screen and (min-width: 1024px) {
     .main-nav {
       opacity: 1;
@@ -170,7 +171,9 @@ a {
   height: 20px;
   width: 20px;
   position: fixed;
-  z-index: 2; }
+  z-index: 2;
+  font-size: 93px;
+  font-weight: 900; }
   .hamburger-menu span {
     cursor: pointer;
     border-radius: 5px;
@@ -222,20 +225,20 @@ a {
   display: block; }
 
 .logo {
-  font-size: 40px;
+  font-size: 70px;
   color: #fff;
   padding-left: 10px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  left: 10px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  left: 20px;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 900;
   z-index: 2; }
   .logo a {
     text-decoration: none;
-    letter-spacing: -10px;
+    letter-spacing: -17px;
     font-weight: bold; }
   @media screen and (max-width: 1023px) {
     .logo {
@@ -247,47 +250,43 @@ a {
         display: block; } }
 
 .about-title {
-  text-align: center;
-  font-size: 24px; }
+  font-size: 24px;
+  float: left; }
 
 .page-section-about {
   color: #000;
   text-align: left; }
-  @media screen and (min-width: 1024px) {
-    .page-section-about .about-text {
-      float: right;
-      padding-left: 50px;
-      padding-right: 20px;
-      width: 49%; } }
-  .page-section-about .about-text .about-title {
+  .page-section-about .about-text {
+    padding-left: 50px;
+    padding-right: 20px;
+    width: 100%; }
+  .page-section-about .about-title {
     font-size: 3rem;
-    color: #F9BA22;
     letter-spacing: 1.2px;
     padding: 20px 20px; }
-  .page-section-about .about-text .about-description {
-    line-height: 1.8;
-    padding: 20px 20px;
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: #939393;
-    text-align: center; }
-  .page-section-about .about-text a {
+  .page-section-about .about-description {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    color: #939393; }
+    @media screen and (min-width: 1024px) {
+      .page-section-about .about-description {
+        font-size: 24px;
+        letter-spacing: 1.2px;
+        line-height: 36px;
+        padding: 20px 20px; } }
+  .page-section-about a {
     text-decoration: none;
     float: right;
-    margin-top: -20px;
+    margin-top: 20px;
     margin-right: 20px; }
-  @media screen and (min-width: 1024px) {
-    .page-section-about .about-img {
-      float: left;
-      width: 49%; } }
-  .page-section-about .about-img img {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto; }
-  .page-section-about .content-container:after {
-    content: "";
-    display: table;
-    clear: both; }
+
+.content-container:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .skills-title {
   color: #676767; }
@@ -309,38 +308,22 @@ a {
           justify-content: center;
   position: relative;
   padding: 50px;
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .skills-item {
-  padding: 20px;
+  padding: 10px;
   min-width: 100px;
   position: relative;
-  padding-bottom: 50px;
-  -webkit-transition: -webkit-transform .2s ease-out;
-  transition: -webkit-transform .2s ease-out;
-  transition: transform .2s ease-out;
-  transition: transform .2s ease-out, -webkit-transform .2s ease-out; }
+  padding-bottom: 50px; }
+  @media screen and (min-width: 1024px) {
+    .skills-item {
+      padding: 20px 60px; } }
   .skills-item img {
     max-height: 80px;
     max-width: 80px;
     font-size: 50px;
-    position: relative;
-    -webkit-transition: -webkit-filter .2s ease-out;
-    transition: -webkit-filter .2s ease-out;
-    transition: filter .2s ease-out;
-    transition: filter .2s ease-out, -webkit-filter .2s ease-out;
-    -webkit-filter: grayscale(80%);
-            filter: grayscale(80%); }
-  .skills-item:hover {
-    box-shadow: 0px 0px 34px -5px rgba(0, 0, 0, 0.8);
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
-    .skills-item:hover .skills-level {
-      opacity: 1; }
-    .skills-item:hover img {
-      -webkit-filter: grayscale(0);
-              filter: grayscale(0); }
+    position: relative; }
 
 .skills-level {
   position: absolute;
@@ -380,9 +363,9 @@ a {
     opacity: 1; }
   @media screen and (min-width: 650px) {
     .projects-item {
-      -ms-flex-preferred-size: 42%;
-          flex-basis: 42%;
-      height: 20vw;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
+      height: 18vw;
       max-height: 400px; } }
 
 .project-image {
@@ -400,6 +383,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
+  font-size: "Yantramanav", sans-serif;
   opacity: 0;
   -webkit-transition: opacity 0.5s ease-out;
   transition: opacity 0.5s ease-out; }
@@ -422,20 +406,20 @@ a {
 
 .project-title {
   text-transform: uppercase;
+  font-weight: bold;
   margin-bottom: 10px;
   font-size: 24px;
-  color: #F9BA22; }
+  color: #fff; }
 
 .project-description {
   margin-bottom: 10px; }
 
 .page-section-contact {
-  background-color: #E6E6E6;
+  background-color: #fff;
   padding-top: 20px; }
   .page-section-contact .content-wrapper {
     padding: 50px 15px;
-    max-width: 800px;
-    margin: 0 auto; }
+    max-width: 800px; }
     @media screen and (min-width: 1024px) {
       .page-section-contact .content-wrapper {
         display: -webkit-box;
@@ -471,10 +455,10 @@ a {
     padding: 10px 10px;
     display: block;
     line-height: 20px;
-    color: #2E2E2E;
+    color: #151515;
     text-decoration: none; }
     .contact-info .contact-link:hover {
-      color: #F9BA22; }
+      color: #3e3b3b; }
   .contact-info .icon-wrapper {
     display: block;
     padding: 0 9px;
@@ -504,7 +488,7 @@ a {
   font-size: 16px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  color: #3e3b3b; }
+  color: #151515; }
   .form-input::-webkit-input-placeholder {
     font-family: Roboto; }
   .form-input.textarea {
@@ -524,10 +508,10 @@ a {
   color: #676767; }
 
 .btn-send {
-  background-color: #3e3b3b;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   border-radius: 2px;
-  border: 0;
+  border: 1px solid #000;
   -webkit-transition: background-color .2s ease-out;
   transition: background-color .2s ease-out;
   margin: 6px 0;
@@ -540,7 +524,11 @@ a {
       position: relative;
       left: 5px; } }
   .btn-send:hover {
-    background-color: #F9BA22; }
+    background-color: #000;
+    color: #fff; }
+
+.section-contact {
+  font-size: 50px; }
 
 footer {
   width: 100%;
@@ -550,5 +538,5 @@ footer {
 footer p {
   height: 80px;
   line-height: 80px;
-  color: #F9BA22;
+  color: #fff;
   margin: 0; }

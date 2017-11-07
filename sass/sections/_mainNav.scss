@@ -5,6 +5,7 @@
     right: 0;
     min-height: 30px;
     padding: 5px;
+    font-family: $first-font;
 
      .main-nav__links {
         display: none;
@@ -34,7 +35,7 @@
                 text-decoration: none;
                 
                 &:hover {
-                    color: $marigold-color;
+                    color: $white;
                 }
             }
         }
@@ -76,6 +77,8 @@
     width: 20px;
     position: fixed;
     z-index: 2;
+    font-size: 93px;
+    font-weight: 900;
 
 
     span {
@@ -144,20 +147,20 @@
 
 // nav logo
 .logo {
-    font-size: 40px;
+    font-size: 70px;
     color: $white;
     padding-left: 10px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 10px;
+    left: 20px;
     font-family: $first-font;
-    font-weight: 600;
+    font-weight: 900;
     z-index: 2;
 
     a {
         text-decoration: none;
-        letter-spacing: -10px;
+        letter-spacing: -17px;
         font-weight: bold;
     }
     @media screen and (max-width: $tablet-max) {
@@ -165,7 +168,7 @@
         transform: none;
         left: 5px;
 
-        a {
+        a { 
             display: block;
         }
     }    

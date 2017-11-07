@@ -11,11 +11,18 @@ body {
 }
 .section-title {
     text-align: center;
-    font-size: 26px;
+    font-size: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: $title-font;
+    font-family: $first-font;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop-min) {
+        font-size: 99.2px;
+    }
 }
+
+
 .section-subtitle {
     color: transparentize($title-color, 0.2);
 }

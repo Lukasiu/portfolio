@@ -1,11 +1,11 @@
 .page-section-contact {
-     background-color: $secondary-color;
+     background-color: $white;
      padding-top: 20px;
 
     .content-wrapper {
         padding: 50px 15px;
         max-width: 800px;
-        margin: 0 auto; 
+        //margin: 0 auto; 
 
         @media screen and (min-width: $desktop-min) {
             display: flex; 
@@ -43,7 +43,7 @@
         text-decoration: none;
 
         &:hover {
-            color: $marigold-color;
+            color: $primary-color;
         }
     }
 
@@ -81,7 +81,7 @@
     font-size: 16px;
     border: 1px solid $secondary-color;
     border-radius: 4px;
-    color: $primary-color;
+    color: #151515;
     &::-webkit-input-placeholder {
         font-family: Roboto;
     }
@@ -107,10 +107,10 @@
 }
 
 .btn-send {
-    background-color: $primary-color;
-    color: $white;
+    background-color: $white;
+    color: $black;
     border-radius: 2px;
-    border: 0;
+    border: 1px solid $black;
     transition: background-color .2s ease-out;
     margin: 6px 0;
     height: 40px;
@@ -124,6 +124,10 @@
     }
 
     &:hover {
-        background-color: $marigold-color;
+        background-color: $black;
+        color: $white;
     }
+}
+.section-contact {
+    font-size: 50px;
 }
