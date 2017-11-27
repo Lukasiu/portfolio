@@ -80,8 +80,8 @@ a {
   text-transform: uppercase; }
 
 .hero {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/img4.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/img4.jpg) no-repeat;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/myphoto.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/myphoto.jpg) no-repeat;
   background-size: cover;
   background-position: center top;
   width: 100%;
@@ -418,7 +418,7 @@ a {
   background-color: #fff;
   padding: 20px 80px; }
   @media screen and (min-width: 1024px) {
-    .page-section-contact .content-wrapper {
+    .page-section-contact {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
