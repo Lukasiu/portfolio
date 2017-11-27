@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Overpass:400,700|Oswald:400,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Yantramanavt");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -416,28 +416,29 @@ a {
 
 .page-section-contact {
   background-color: #fff;
-  padding-top: 20px; }
-  .page-section-contact .content-wrapper {
-    padding: 50px 15px;
-    max-width: 800px; }
-    @media screen and (min-width: 1024px) {
-      .page-section-contact .content-wrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; } }
+  padding: 20px 80px; }
+  @media screen and (min-width: 1024px) {
+    .page-section-contact .content-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .contact-form-wrapper {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   @media screen and (min-width: 1024px) {
     .contact-form-wrapper {
-      -ms-flex-preferred-size: 60%;
-          flex-basis: 60%;
-      padding-right: 30px; } }
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; } }
 
 .contact-info {
   -ms-flex-preferred-size: 100%;
@@ -458,7 +459,9 @@ a {
     color: #151515;
     text-decoration: none; }
     .contact-info .contact-link:hover {
-      color: #3e3b3b; }
+      color: #C0C0C0;
+      -webkit-transition: .3s;
+      transition: .3s; }
   .contact-info .icon-wrapper {
     display: block;
     padding: 0 9px;
@@ -510,6 +513,7 @@ a {
 .btn-send {
   background-color: #fff;
   color: #000;
+  cursor: pointer;
   border-radius: 2px;
   border: 1px solid #000;
   -webkit-transition: background-color .2s ease-out;
@@ -524,7 +528,7 @@ a {
       position: relative;
       left: 5px; } }
   .btn-send:hover {
-    background-color: #000;
+    background-color: #3e3b3b;
     color: #fff; }
 
 .section-contact {

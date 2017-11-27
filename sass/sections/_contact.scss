@@ -1,15 +1,12 @@
 .page-section-contact {
      background-color: $white;
-     padding-top: 20px;
-
-    .content-wrapper {
-        padding: 50px 15px;
-        max-width: 800px;
-        //margin: 0 auto; 
+     padding: 20px 80px;
 
         @media screen and (min-width: $desktop-min) {
             display: flex; 
             flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
 }
@@ -18,8 +15,7 @@
     flex-basis: 100%;
 
     @media screen and (min-width: $desktop-min) { 
-        flex-basis: 60%;
-        padding-right: 30px;
+        flex-basis: 50%;
     }
 }
 
@@ -43,7 +39,8 @@
         text-decoration: none;
 
         &:hover {
-            color: $primary-color;
+            color: $silver;
+            transition: .3s;
         }
     }
 
@@ -64,6 +61,7 @@
         }
     }      
 }
+
 .contact-form, .contact-info {
     text-align: center;
 
@@ -109,6 +107,7 @@
 .btn-send {
     background-color: $white;
     color: $black;
+    cursor: pointer;
     border-radius: 2px;
     border: 1px solid $black;
     transition: background-color .2s ease-out;
@@ -124,7 +123,7 @@
     }
 
     &:hover {
-        background-color: $black;
+        background-color: $primary-color;
         color: $white;
     }
 }
