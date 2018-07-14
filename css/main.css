@@ -142,7 +142,7 @@ a {
       color: #fff;
       text-decoration: none; }
       .main-nav .main-nav__links li a:hover {
-        color: #fff; }
+        color: #C0C0C0; }
   @media screen and (min-width: 1024px) {
     .main-nav {
       opacity: 1;
