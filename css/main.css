@@ -356,7 +356,7 @@ a {
   opacity: 0;
   -webkit-transition: box-shadow .2s ease-out;
   transition: box-shadow .2s ease-out;
-  z-index: 2; }
+  z-index: 3; }
 
 .page-section-projects {
   padding-bottom: 30px; }
